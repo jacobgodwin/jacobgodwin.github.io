@@ -8,7 +8,8 @@ html {
 body {
   margin: 0;
   color: #f4f4f9;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.5;
 }
 
 #root {
@@ -29,6 +30,10 @@ main {
   margin: 0 auto;
   min-height: 100vh;
   padding: 26rem 15rem 0 15rem;
+}
+
+p {
+  letter-spacing: 0.1rem;
 }
 
 /* Header and top nav styling */
@@ -59,7 +64,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Roboto Mono', monospace;
   position: relative;
   z-index: 12;
   width: 100%;
@@ -162,6 +167,38 @@ section {
   max-width: 100rem;
 }
 
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-bottom: 4rem;
+}
+
+.heading h1 {
+  color: #b9faf8;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.heading::before {
+  content: '';
+  display: block;
+  position: relative;
+  width: 20rem;
+  height: 0.1rem;
+  margin-left: 20px;
+  background-color: #cccdff;
+}
+
+.heading::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 20rem;
+  height: 0.1rem;
+  background-color: #cccdff;
+}
+
 /* Intro section styling */
 
 #intro {
@@ -175,7 +212,7 @@ section {
 
 #intro h1 {
   color: #b9faf8;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 300;
   font-size: 1.8rem;
   margin: 0;
@@ -208,9 +245,83 @@ section {
 
 /* About section */
 
+#about {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 8rem;
+}
+
+.inner p {
+  color: #f4f4f9;
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
 #profile-image > img {
   height: 30rem;
   width: 30rem;
   border-radius: 50%;
   border: 4px solid #b9faf8;
+}
+
+/* Skills section */
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skills > .heading {
+  align-self: flex-start;
+}
+
+#skills p {
+  color: #f4f4f9;
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin: 0;
+  padding-bottom: 5rem;
+}
+
+#skills p > a {
+  color: #cccdff;
+  text-decoration: none;
+}
+
+#skills p > a:hover {
+  color: #b9faf8;
+  text-decoration: none;
+}
+
+.skill {
+  font-size: 7rem;
+  padding: 0.5rem 2rem;
+  background-color: rgba(244, 244, 249, 0.1);
+  border-radius: 2rem;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 4rem;
+  padding-bottom: 5rem;
+}
+
+.wip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 4rem;
 }
