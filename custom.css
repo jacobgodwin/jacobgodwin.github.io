@@ -1,0 +1,115 @@
+:root {
+  --bg-primary: #102b3f;
+  --nav-text-color: #cccdff;
+  --nav-hover: #b9faf8;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  background-color: var(--bg-primary);
+  color: var(--nav-text-color);
+  padding: 1rem;
+}
+
+.navbar-nav {
+  font-size: 0.9rem;
+  font-weight: 200;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+  color: var(--nav-hover);
+}
+
+.nav-item::marker {
+  color: var(--nav-hover);
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: var(--nav-text-color);
+}
+
+.nav-item a:hover {
+  text-decoration: none;
+  color: var(--nav-hover);
+}
+
+.resume-button {
+  display: inline-block;
+  color: var(--nav-hover);
+  background-color: transparent;
+  text-decoration: none;
+  border: 0.1rem solid var(--nav-hover);
+  padding: 0.8rem 1.3rem;
+  border-radius: 0.5rem;
+}
+
+.resume-button:hover {
+  display: inline-block;
+  color: var(--nav-hover);
+  text-decoration: none;
+  border: 0.1rem solid var(--nav-hover);
+  padding: 0.8rem 1.3rem;
+  border-radius: 0.5rem;
+  background-color: rgba(185, 250, 248, 0.2);
+}
+
+/* .navbar {
+  background-color: var(--bg-primary);
+}
+
+.nav-link {
+  color: var(--nav-text-color);
+}
+
+.navbar-nav {
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+  color: var(--nav-hover);
+}
+
+
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.collapse {
+  border: 1px solid red;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28185, 250, 248, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28185, 250, 248, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.resume-button {
+  color: var(--nav-hover);
+  background-color: transparent;
+  text-decoration: none;
+  border: 0.1rem solid var(--nav-hover);
+  padding: 0.8rem 1.3rem;
+  border-radius: 0.5rem;
+}
+
+.resume-button:hover {
+  color: var(--nav-hover);
+  text-decoration: none;
+  border: 0.1rem solid var(--nav-hover);
+  padding: 0.8rem 1.3rem;
+  border-radius: 0.5rem;
+  background-color: rgba(185, 250, 248, 0.2);
+} */
