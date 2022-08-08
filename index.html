@@ -18,40 +18,26 @@
     <title>Jacob Godwin</title>
 </head>
 
-<body>
-    <div id="styled-content">
-        <nav class="navbar">
-            <a class="nav-logo" href="/#root"><img src="/assets/J-1.png" alt="Logo with letter J" height="60"
-                    width="60" /></a>
-            <div class="navbar-nav">
-                <i class="bi bi-list navbar-toggle"></i>
-                <ol class="nav-links nav-toggle-item">
-                    <li class="nav-item"><a href="/#about">About</a></li>
-                    <li class="nav-item"><a href="/#skills">Skills</a></li>
-                    <li class="nav-item"><a href="/#projects">Projects</a></li>
-                    <li class="nav-item"><a href="/#contact">Contact</a></li>
-                </ol>
-                <div class="resume nav-toggle-item">
-                    <a href="/assets/resume.pdf" target="_blank" class="resume-button">Resume</a>
-                </div>
+<body id="root">
+    <nav class="navbar" id="navigation">
+        <a class="nav-logo" href="/#root"><img src="/assets/J-1.png" alt="Logo with letter J" height="60"
+                width="60" /></a>
+        <div class="navbar-nav">
+            <i class="bi bi-list navbar-toggle"></i>
+            <ol class="nav-links nav-toggle-item">
+                <li class="nav-item"><a href="/#about">About</a></li>
+                <li class="nav-item"><a href="/#skills">Skills</a></li>
+                <li class="nav-item"><a href="/#projects">Projects</a></li>
+                <li class="nav-item"><a href="/#contact">Contact</a></li>
+            </ol>
+            <div class="resume nav-toggle-item">
+                <a href="/assets/resume.pdf" target="_blank" class="resume-button">Resume</a>
             </div>
-        </nav>
-        <!-- <div class="logo">
-                    <a href="/#root"><img src="/assets/J-1.png" alt="Logo with letter J" /></a>
-                </div>
-                <div class="nav-links">
-                    <ol>
-                        <li><a href="/#about">About</a></li>
-                        <li><a href="/#skills">Skills</a></li>
-                        <li><a href="/#projects">Projects</a></li>
-                        <li><a href="/#contact">Contact</a></li>
-                    </ol>
-                    <div class="resume">
-                        <a href="/assets/resume.pdf" target="_blank" class="resume-button">Resume</a>
-                    </div>
-                </div> -->
-        </nav>
-        <div class="side-bar">
+        </div>
+    </nav>
+    <div id="styled-content">
+
+        <!-- <div class="side-bar">
             <ul class="social">
                 <li>
                     <a target="_blank" href="https://github.com/jacobgodwin">
@@ -67,103 +53,100 @@
                             class="bi bi-linkedin"></i></a>
                 </li>
             </ul>
-        </div>
-        <div id="content">
-            <main>
-                <section id="intro">
-                    <h1>Hi, My name is</h1>
-                    <h2>Jacob Godwin.</h2>
-                    <h3>Building things on the web.</h3>
-                    <p>
-                        I'm a self-taught, front-end web developer who loves building websites.
-                    </p>
-                </section>
-                <!-- <section id="about">
-                    <div class="heading">
-                        <h1>About Me</h1>
-                    </div>
-                    <div class="inner">
-                        <div id="about-text">
-                            <div>
-                                <p>
-                                    Hello! My name is Jacob Godwin. I've been working in IT
-                                    for almost 10 years, in jobs ranging from tech support, to
-                                    systems admin and even some business analyst work.
-                                </p>
-                                <p>
-                                    I've always loved learning about technology, but recently
-                                    found that I really enjoy coding and building things.
-                                    There's just something extremely satisfying and magical
-                                    about watching a webpage come to life from some lines of
-                                    text in a code editor.
-                                </p>
-                                <p>
-                                    Which brings me to today. I've been learning and building
-                                    things on the web for the past year and would love any
-                                    opportunity to put these skills to use.
-                                </p>
-                            </div>
-                        </div>
-                        <div id="profile-image">
-                            <img src="/assets/profile.png" alt="Profile image" />
-                        </div>
-                    </div>
-                </section>
-                <section id="skills">
-                    <div class="heading">
-                        <h1>Skills</h1>
-                    </div>
-                    <div class="skills-intro">
+        </div> -->
+        <main>
+            <section id="intro">
+                <h1>Hi, My name is</h1>
+                <h2>Jacob Godwin.</h2>
+                <h3>Building things on the web.</h3>
+                <p>
+                    I'm a self-taught, front-end web developer who loves building websites.
+                </p>
+            </section>
+            <div class="heading">
+                <h1>About Me</h1>
+            </div>
+            <section id="about">
+                <div id="about-text">
+                    <div>
                         <p>
-                            I'm still actively learning, (mainly following
-                            <a target="_blank" href="https://www.theodinproject.com">The Odin Project's</a>
-                            curriculum) but the below skills are what I'm currently most
-                            proficient in. I've been really focusing on the core of
-                            JavaScript lately and will start diving into React as well.
+                            Hello! My name is Jacob Godwin. I've been working in IT
+                            for almost 10 years, in jobs ranging from tech support, to
+                            systems admin and even some business analyst work.
+                        </p>
+                        <p>
+                            I've always loved learning about technology, but recently
+                            found that I really enjoy coding and building things.
+                            There's just something extremely satisfying and magical
+                            about watching a webpage come to life from some lines of
+                            text in a code editor.
+                        </p>
+                        <p>
+                            Which brings me to today. I've been learning and building
+                            things on the web for the past year and would love any
+                            opportunity to put these skills to use.
                         </p>
                     </div>
-                    <div class="skills-container">
-                        <div class="skill" id="html">
-                            <i class="devicon-html5-plain-wordmark"></i>
-                        </div>
-                        <div class="skill" id="css">
-                            <i class="devicon-css3-plain-wordmark"></i>
-                        </div>
-                        <div class="skill" id="javascript">
-                            <i class="devicon-javascript-plain"></i>
-                        </div>
-                        <div class="skill" id="git">
-                            <i class="devicon-git-plain"></i>
-                        </div>
-                        <div class="skill" id="gitlab">
-                            <i class="devicon-gitlab-plain"></i>
-                        </div>
-                        <div class="skill" id="boot-strap">
-                            <i class="devicon-bootstrap-plain"></i>
-                        </div>
-                        <div class="skill" id="gimp">
-                            <i class="devicon-gimp-plain"></i>
-                        </div>
-                        <div class="skill" id="markdown">
-                            <i class="devicon-markdown-original"></i>
-                        </div>
-                        <div class="skill" id="vscode">
-                            <i class="devicon-vscode-plain"></i>
-                        </div>
+                </div>
+                <div id="profile-image">
+                    <img src="/assets/profile.png" alt="Profile image" width="300" height="300" />
+                </div>
+            </section>
+            <div class="heading">
+                <h1>Skills</h1>
+            </div>
+            <section id="skills">
+                <div class="skills-intro">
+                    <p>
+                        I'm still actively learning, (mainly following
+                        <a target="_blank" href="https://www.theodinproject.com">The Odin Project's</a>
+                        curriculum) but the below skills are what I'm currently most
+                        proficient in. I've been really focusing on the core of
+                        JavaScript lately and will start diving into React as well.
+                    </p>
+                </div>
+                <div class="skills-container">
+                    <div class="skill" id="html">
+                        <i class="devicon-html5-plain-wordmark"></i>
                     </div>
-                    <div>
-                        <p>Actively Learning:</p>
+                    <div class="skill" id="css">
+                        <i class="devicon-css3-plain-wordmark"></i>
                     </div>
-                    <div class="wip">
-                        <div class="skill" id="webpack">
-                            <i class="devicon-webpack-plain"></i>
-                        </div>
-                        <div class="skill" id="npm">
-                            <i class="devicon-npm-original-wordmark"></i>
-                        </div>
+                    <div class="skill" id="javascript">
+                        <i class="devicon-javascript-plain"></i>
                     </div>
-                </section>
-                <section id="projects">
+                    <div class="skill" id="git">
+                        <i class="devicon-git-plain"></i>
+                    </div>
+                    <div class="skill" id="gitlab">
+                        <i class="devicon-gitlab-plain"></i>
+                    </div>
+                    <div class="skill" id="boot-strap">
+                        <i class="devicon-bootstrap-plain"></i>
+                    </div>
+                    <div class="skill" id="gimp">
+                        <i class="devicon-gimp-plain"></i>
+                    </div>
+                    <div class="skill" id="markdown">
+                        <i class="devicon-markdown-original"></i>
+                    </div>
+                    <div class="skill" id="vscode">
+                        <i class="devicon-vscode-plain"></i>
+                    </div>
+                </div>
+                <div>
+                    <p>Actively Learning:</p>
+                </div>
+                <div class="wip">
+                    <div class="skill" id="webpack">
+                        <i class="devicon-webpack-plain"></i>
+                    </div>
+                    <div class="skill" id="npm">
+                        <i class="devicon-npm-original-wordmark"></i>
+                    </div>
+                </div>
+            </section>
+            <!--<section id="projects">
                     <div class="heading">
                         <h1>Projects</h1>
                     </div>
@@ -310,8 +293,7 @@
                     <a href="mailto:jacobpgodwin@gmail.com" class="email-link" target="_blank">Say Hello</a>
                     <div class="email">jacobpgodwin@gmail.com</div>
                 </section> -->
-            </main>
-        </div>
+        </main>
         <footer>
             <div>
                 <p>Built by Jacob Godwin</p>

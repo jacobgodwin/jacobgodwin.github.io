@@ -1,7 +1,20 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
+  #styled-content {
+    position: relative;
+  }
+
   .navbar-nav,
   .nav-links {
     flex-direction: column;
+  }
+
+  .navbar {
+    padding-right: 2rem;
+    border: 1px solid red;
+  }
+
+  .resume {
+    padding-bottom: 2rem;
   }
 
   .nav-logo {
@@ -16,7 +29,7 @@
 
   .navbar-nav {
     align-items: center;
-    padding-right: 1rem;
+    margin-left: auto;
   }
 
   .navbar-toggle {
@@ -55,5 +68,9 @@
 
   .navbar-show {
     display: flex;
+  }
+
+  .heading {
+    width: 80%;
   }
 }

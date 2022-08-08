@@ -2,16 +2,79 @@
   --bg-primary: #102b3f;
   --nav-text-color: #cccdff;
   --nav-hover: #b9faf8;
+  --text-primary: #f4f4f9;
 }
+
+/* General */
+
+html {
+  background-color: var(--bg-primary);
+}
+
+#styled-content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Noto Sans", sans-serif;
+  min-height: 100vh;
+}
+
+.offset-top {
+  margin-top: -276px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 6rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  width: 60%;
+}
+
+.heading h1 {
+  color: var(--nav-hover);
+  font-weight: 400;
+  font-size: clamp(1rem, 0.8548rem + 0.6452vw, 1.5rem);
+}
+
+.heading::before,
+.heading::after {
+  content: "";
+  flex: 1 1;
+  height: 1px;
+  background-color: var(--nav-text-color);
+}
+
+/* Navbar */
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Roboto Mono", monospace;
-  background-color: var(--bg-primary);
+  background-color: rgba(16, 43, 63, 0.95);
   color: var(--nav-text-color);
-  padding: 1rem;
+  padding: 1rem 2.5rem 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 12;
 }
 
 .navbar-nav {
@@ -78,53 +141,82 @@
   font-size: 2rem;
 }
 
-/* .navbar {
-  background-color: var(--bg-primary);
+/* Intro */
+
+#intro {
+  margin-top: clamp(8rem, 20vw + 1rem, 18rem);
+  margin-bottom: clamp(8rem, 20vw + 1rem, 25rem);
 }
 
-.nav-link {
+#intro > h1 {
+  color: var(--nav-hover);
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9419rem + 0.2581vw, 1.2rem);
+  margin-bottom: 1rem;
+}
+
+#intro > h2 {
   color: var(--nav-text-color);
+  font-weight: 600;
+  font-size: clamp(1.8rem, 0.871rem + 4.129vw, 5rem);
+  margin-bottom: 1rem;
 }
 
-.navbar-nav {
-  list-style-type: decimal-leading-zero;
-  list-style-position: inside;
-  color: var(--nav-hover);
+#intro > h3 {
+  font-weight: 500;
+  font-size: clamp(1.6rem, 1.1935rem + 1.8065vw, 3rem);
+  color: #a6a6c8;
+  margin-bottom: 1.5rem;
 }
 
-
-
-.navbar-toggler:focus {
-  outline: none;
-  box-shadow: none;
+#intro > p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  max-width: 70%;
 }
 
-.collapse {
-  border: 1px solid red;
+/* About */
+
+#about {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 6rem;
+  min-width: 300px;
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28185, 250, 248, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+#about-text {
+  font-size: clamp(1rem, 0.9419rem + 0.2581vw, 1.2rem);
 }
 
-.navbar-toggler-icon:hover {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28185, 250, 248, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+#about-text > div > p {
+  max-width: 40rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
 }
 
-.resume-button {
-  color: var(--nav-hover);
-  background-color: transparent;
-  text-decoration: none;
-  border: 0.1rem solid var(--nav-hover);
-  padding: 0.8rem 1.3rem;
-  border-radius: 0.5rem;
+#profile-image {
+  text-align: center;
 }
 
-.resume-button:hover {
-  color: var(--nav-hover);
-  text-decoration: none;
-  border: 0.1rem solid var(--nav-hover);
-  padding: 0.8rem 1.3rem;
-  border-radius: 0.5rem;
-  background-color: rgba(185, 250, 248, 0.2);
-} */
+#profile-image > img {
+  border-radius: 50%;
+  border: 3px solid var(--nav-hover);
+}
+
+/* Skills */
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer */
+
+footer {
+  margin-top: auto;
+}
