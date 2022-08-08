@@ -19,14 +19,19 @@
   font-weight: 200;
   display: flex;
   gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 2rem;
   list-style-type: decimal-leading-zero;
   list-style-position: inside;
   color: var(--nav-hover);
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item::marker {
@@ -41,6 +46,10 @@
 .nav-item a:hover {
   text-decoration: none;
   color: var(--nav-hover);
+}
+
+.resume {
+  text-align: center;
 }
 
 .resume-button {
@@ -61,6 +70,12 @@
   padding: 0.8rem 1.3rem;
   border-radius: 0.5rem;
   background-color: rgba(185, 250, 248, 0.2);
+}
+
+.navbar-toggle {
+  display: none;
+  color: var(--nav-hover);
+  font-size: 2rem;
 }
 
 /* .navbar {
