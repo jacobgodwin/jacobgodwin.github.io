@@ -70,7 +70,12 @@
   }
 
   .heading {
-    width: 90%;
+    width: 50vw;
+    gap: 1rem;
+  }
+
+  .heading::before {
+    display: none;
   }
 
   .contact-para {
