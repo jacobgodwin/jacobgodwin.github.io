@@ -96,4 +96,8 @@
   #skills-content {
     width: 80vw;
   }
+
+  .skills-container {
+    width: 100%;
+  }
 }
