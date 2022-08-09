@@ -259,7 +259,7 @@ a.anchor {
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(7rem, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(6rem, 100%), 1fr));
   justify-items: center;
   gap: 1rem;
   margin: 4rem 0;
