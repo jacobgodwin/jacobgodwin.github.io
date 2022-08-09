@@ -76,4 +76,15 @@
   .contact-para {
     width: 60vw;
   }
+
+  .side-bar {
+    display: none;
+  }
+
+  .social-alt {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
 }
