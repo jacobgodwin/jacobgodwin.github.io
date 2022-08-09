@@ -1,21 +1,18 @@
-// // When the user scrolls the page, execute myFunction
-// window.onscroll = function () {
-//   console.log(window.pageYOffset);
-//   hideNav();
-// };
+function navToggle() {
+  const navItems = document.querySelectorAll(".nav-toggle-item");
+  const navToggle = Array.from(
+    document.getElementsByClassName("navbar-toggle")
+  );
+  const content = document.getElementById("styled-content");
 
-// // Get navbar element
-// var navbar = document.getElementById('navbar');
+  navItems.forEach((nav) => nav.classList.toggle("navbar-show"));
 
-// // Get the intro div height
-// var intro = document.getElementById('intro');
+  navToggle.forEach((item) => {
+    item.classList.toggle("bi-list");
+    item.classList.toggle("bi-x-lg");
+  });
 
-// // Get the offset position of the intro div
-// var sticky = 100;
+  content.classList.toggle("offset-top");
+}
 
-// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-// function hideNav() {
-//   if ((window.pageYOffset = sticky)) {
-//     navbar.style = 'position:sticky';
-//   }
-// }
+document.querySelector(".navbar-toggle").addEventListener("click", navToggle);

@@ -1,369 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@100;200;300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@100;200;300;400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="queries.css" />
     <title>Jacob Godwin</title>
-  </head>
-  <body>
-    <div id="root">
-      <div id="styled-content">
-        <header id="navbar">
-          <nav>
-            <div class="logo">
-              <a href="/#root"
-                ><img src="/assets/J-1.png" alt="Logo with letter J"
-              /></a>
+</head>
+
+<body id="root">
+    <nav class="navbar" id="navigation">
+        <a class="nav-logo" href="/#root"><img src="/assets/J-1.png" alt="Logo with letter J" height="60"
+                width="60" /></a>
+        <div class="navbar-nav">
+            <i class="bi bi-list navbar-toggle"></i>
+            <ol class="nav-links nav-toggle-item">
+                <li class="nav-item"><a href="/#about">About</a></li>
+                <li class="nav-item"><a href="/#skills">Skills</a></li>
+                <li class="nav-item"><a href="/#projects">Projects</a></li>
+                <li class="nav-item"><a href="/#contact">Contact</a></li>
+            </ol>
+            <div class="resume nav-toggle-item">
+                <a href="/assets/resume.pdf" target="_blank" class="resume-button">Resume</a>
             </div>
-            <div class="nav-links">
-              <ol>
-                <li><a href="/#about">About</a></li>
-                <li><a href="/#skills">Skills</a></li>
-                <li><a href="/#projects">Projects</a></li>
-                <li><a href="/#contact">Contact</a></li>
-              </ol>
-              <div class="resume">
-                <a
-                  href="/assets/resume.pdf"
-                  target="_blank"
-                  class="resume-button"
-                  >Resume</a
-                >
-              </div>
-            </div>
-          </nav>
-        </header>
-        <div class="side-bar">
-          <ul class="social">
-            <li>
-              <a target="_blank" href="https://github.com/jacobgodwin">
-                <i class="bi bi-github"></i>
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://www.instagram.com/jacobgodwin04/"
-                ><i class="bi bi-instagram"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/jacobpgodwin/"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-            </li>
-          </ul>
         </div>
-        <div id="content">
-          <main>
+    </nav>
+    <div id="styled-content">
+        <div class="side-bar">
+            <ul class="social">
+                <li>
+                    <a target="_blank" href="https://github.com/jacobgodwin">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.instagram.com/jacobgodwin04/"><i
+                            class="bi bi-instagram"></i></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/jacobpgodwin/"><i
+                            class="bi bi-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+        <main>
             <section id="intro">
-              <div>
                 <h1>Hi, My name is</h1>
-              </div>
-              <div>
                 <h2>Jacob Godwin.</h2>
-              </div>
-              <div>
                 <h3>Building things on the web.</h3>
-              </div>
-              <div>
                 <p>
                   I'm a self-taught, front-end web developer who loves building websites.
                 </p>
-              </div>
             </section>
-            <section id="about">
-              <div class="heading">
+            <div class="heading">
+
                 <h1>About Me</h1>
-              </div>
-              <div class="inner">
+            </div>
+            <a href="" class="anchor" id="about"></a>
+            <section id="about-grid">
                 <div id="about-text">
-                  <div>
-                    <p>
-                      Hello! My name is Jacob Godwin. I've been working in IT
-                      for almost 10 years, in jobs ranging from tech support, to
-                      systems admin and even some business analyst work.
-                    </p>
-                    <p>
-                      I've always loved learning about technology, but recently
-                      found that I really enjoy coding and building things.
-                      There's just something extremely satisfying and magical
-                      about watching a webpage come to life from some lines of
-                      text in a code editor.
-                    </p>
-                    <p>
-                      Which brings me to today. I've been learning and building
-                      things on the web for the past year and would love any
-                      opportunity to put these skills to use.
-                    </p>
-                  </div>
+                    <div>
+                        <p>
+                            Hello! My name is Jacob Godwin. I've been working in IT
+                            for almost 10 years, in jobs ranging from tech support, to
+                            systems admin and even some business analyst work.
+                        </p>
+                        <p>
+                            I've always loved learning about technology, but recently
+                            found that I really enjoy coding and building things.
+                            There's just something extremely satisfying and magical
+                            about watching a webpage come to life from some lines of
+                            text in a code editor.
+                        </p>
+                        <p>
+                            Which brings me to today. I've been learning and building
+                            things on the web for the past year and would love any
+                            opportunity to put these skills to use.
+                        </p>
+                    </div>
                 </div>
                 <div id="profile-image">
-                  <img src="/assets/profile.png" alt="Profile image" />
+                    <img src="/assets/profile.png" alt="Profile image" width="300" height="300" />
                 </div>
-              </div>
             </section>
-            <section id="skills">
-              <div class="heading">
+            <div class="heading">
                 <h1>Skills</h1>
-              </div>
-              <div class="skills-intro">
-                <p>
-                  I'm still actively learning, (mainly following
-                  <a target="_blank" href="https://www.theodinproject.com"
-                    >The Odin Project's</a
-                  >
-                  curriculum) but the below skills are what I'm currently most
-                  proficient in. I've been really focusing on the core of
-                  JavaScript lately and will start diving into React as well.
-                </p>
-              </div>
-              <div class="skills-container">
-                <div class="skill" id="html">
-                  <i class="devicon-html5-plain-wordmark"></i>
-                </div>
-                <div class="skill" id="css">
-                  <i class="devicon-css3-plain-wordmark"></i>
-                </div>
-                <div class="skill" id="javascript">
-                  <i class="devicon-javascript-plain"></i>
-                </div>
-                <div class="skill" id="git">
-                  <i class="devicon-git-plain"></i>
-                </div>
-                <div class="skill" id="gitlab">
-                  <i class="devicon-gitlab-plain"></i>
-                </div>
-                <div class="skill" id="boot-strap">
-                  <i class="devicon-bootstrap-plain"></i>
-                </div>
-                <div class="skill" id="gimp">
-                  <i class="devicon-gimp-plain"></i>
-                </div>
-                <div class="skill" id="markdown">
-                  <i class="devicon-markdown-original"></i>
-                </div>
-                <div class="skill" id="vscode">
-                  <i class="devicon-vscode-plain"></i>
-                </div>
-              </div>
-              <div>
-                <p>Actively Learning:</p>
-              </div>
-              <div class="wip">
-                <div class="skill" id="webpack">
-                  <i class="devicon-webpack-plain"></i>
-                </div>
-                <div class="skill" id="npm">
-                  <i class="devicon-npm-original-wordmark"></i>
-                </div>
-              </div>
-            </section>
-            <section id="projects">
-              <div class="heading">
-                <h1>Projects</h1>
-              </div>
-              <ul class="projects-grid">
-                <li class="project">
-                  <div class="project-inner">
-                    <header>
-                      <div class="project-top">
-                        <div class="folder"><i class="bi bi-folder"></i></div>
-                        <div class="project-links">
-                          <a
-                            target="_blank"
-                            href="https://github.com/jacobgodwin/etch-a-sketch"
-                            ><i class="bi bi-github"></i
-                          ></a>
-                          <a
-                            target="_blank"
-                            href="https://jacobgodwin.github.io/etch-a-sketch/"
-                            ><i class="bi bi-box-arrow-up-right"></i
-                          ></a>
-                        </div>
-                      </div>
-                      <h3 class="project-title">Etch-A-Sketch</h3>
-                      <div class="project-description">
-                        <p>
-                          A simple Etch-A-Sketch concept that demonstrates the
-                          ability to implement HTML/CSS/JS into a functioning
-                          and interactive web page.
-                        </p>
-                      </div>
-                    </header>
-                    <footer>
-                      <ul class="project-tech">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                      </ul>
-                    </footer>
-                  </div>
-                </li>
-                <li class="project">
-                  <div class="project-inner">
-                    <header>
-                      <div class="project-top">
-                        <div class="folder"><i class="bi bi-folder"></i></div>
-                        <div class="project-links">
-                          <a
-                            target="_blank"
-                            href="https://github.com/jacobgodwin/calculator"
-                            ><i class="bi bi-github"></i
-                          ></a>
-                          <a
-                            target="_blank"
-                            href="https://jacobgodwin.github.io/calculator/"
-                            ><i class="bi bi-box-arrow-up-right"></i
-                          ></a>
-                        </div>
-                      </div>
-                      <h3 class="project-title">Calculator</h3>
-                      <div class="project-description">
-                        <p>
-                          Web-based Calculator demonstrating JavaScript DOM
-                          manipulation, functions, event listeners, keyboard
-                          support. On the styling side, I wanted to see if I
-                          could come close to replicating the design of the
-                          Apple calculator.
-                        </p>
-                      </div>
-                    </header>
-                    <footer>
-                      <ul class="project-tech">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Bootstrap</li>
-                      </ul>
-                    </footer>
-                  </div>
-                </li>
-                <li class="project">
-                  <div class="project-inner">
-                    <header>
-                      <div class="project-top">
-                        <div class="folder"><i class="bi bi-folder"></i></div>
-                        <div class="project-links">
-                          <a
-                            target="_blank"
-                            href="https://github.com/jacobgodwin/tictactoe"
-                            ><i class="bi bi-github"></i
-                          ></a>
-                          <a
-                            target="_blank"
-                            href="https://jacobgodwin.github.io/tictactoe/"
-                            ><i class="bi bi-box-arrow-up-right"></i
-                          ></a>
-                        </div>
-                      </div>
-                      <h3 class="project-title">Tic-Tac-Toe</h3>
-                      <div class="project-description">
-                        <p>
-                          Tic-Tac-Toe game built to demonstrate the use of
-                          JavaScript modules and factory functions. I realized
-                          that I could have included all game assets inside one
-                          module but wanted to learn about private and public
-                          functions and variables and how to access them.
-                        </p>
-                      </div>
-                    </header>
-                    <footer>
-                      <ul class="project-tech">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Bootstrap</li>
-                      </ul>
-                    </footer>
-                  </div>
-                </li>
-                <li class="project">
-                  <div class="project-inner">
-                    <header>
-                      <div class="project-top">
-                        <div class="folder"><i class="bi bi-folder"></i></div>
-                        <div class="project-links">
-                          <a
-                            target="_blank"
-                            href="https://github.com/jacobgodwin/library-project"
-                            ><i class="bi bi-github"></i
-                          ></a>
-                          <a
-                            target="_blank"
-                            href="https://jacobgodwin.github.io/library-project/"
-                            ><i class="bi bi-box-arrow-up-right"></i
-                          ></a>
-                        </div>
-                      </div>
-                      <h3 class="project-title">Library Project</h3>
-                      <div class="project-description">
-                        <p>
-                          Simple and rudimentary book library that allows the
-                          user to add books, update the reading status, and
-                          remove the book from the "bookshelf".
-                        </p>
-                      </div>
-                    </header>
-                    <footer>
-                      <ul class="project-tech">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Bootstrap</li>
-                      </ul>
-                    </footer>
-                  </div>
-                </li>
-              </ul>
-            </section>
-            <section id="contact">
-              <div class="heading">
-                <h1>Contact</h1>
-              </div>
-              <div class="contact-blurb">
-                <p>
-                  Feel free to reach out if you feel like my skills would be a
-                  good match, or if you just want to link up!
-                </p>
-              </div>
-              <a
-                href="mailto:jacobpgodwin@gmail.com"
-                class="email-link"
-                target="_blank"
-                >Say Hello</a
-              >
-              <div class="email">jacobpgodwin@gmail.com</div>
-            </section>
-          </main>
-          <footer>
-            <div>
-              <p>Built by Jacob Godwin</p>
-              <p>
-                Design Inspired by
-                <a href="https://brittanychiang.com/">Brittany Chiang</a>
-              </p>
             </div>
-          </footer>
-        </div>
-      </div>
+            <a href="" class="anchor" id="skills"></a>
+            <section id="skills-content">
+                <div class="skills-para">
+                    <p>
+                        I'm a self-taught developer, mainly following
+                        <a target="_blank" href="https://www.theodinproject.com">The Odin Project's</a>
+                        curriculum, and the below skills are what I'm currently most
+                        proficient in. I've been really focusing on the core of
+                        JavaScript lately and plan to start learning React as well.
+                    </p>
+                </div>
+                <div class="skills-container">
+                    <div class="skill" id="html">
+                        <i class="devicon-html5-plain-wordmark"></i>
+                    </div>
+                    <div class="skill" id="css">
+                        <i class="devicon-css3-plain-wordmark"></i>
+                    </div>
+                    <div class="skill" id="javascript">
+                        <i class="devicon-javascript-plain"></i>
+                    </div>
+                    <div class="skill" id="git">
+                        <i class="devicon-git-plain"></i>
+                    </div>
+                    <div class="skill" id="gitlab">
+                        <i class="devicon-gitlab-plain"></i>
+                    </div>
+                    <div class="skill" id="boot-strap">
+                        <i class="devicon-bootstrap-plain"></i>
+                    </div>
+                    <div class="skill" id="gimp">
+                        <i class="devicon-gimp-plain"></i>
+                    </div>
+                    <div class="skill" id="markdown">
+                        <i class="devicon-markdown-original"></i>
+                    </div>
+                    <div class="skill" id="vscode">
+                        <i class="devicon-vscode-plain"></i>
+                    </div>
+                </div>
+                <div class="skills-para">
+                    <p>Actively Learning:</p>
+                </div>
+                <div class="skills-container">
+                    <div class="skill" id="webpack">
+                        <i class="devicon-webpack-plain"></i>
+                    </div>
+                    <div class="skill" id="npm">
+                        <i class="devicon-npm-original-wordmark"></i>
+                    </div>
+                </div>
+            </section>
+            <div class="heading">
+                <h1>Projects</h1>
+            </div>
+            <a href="" class="anchor" id="projects"></a>
+            <section id="projects-content">
+                <ul class="projects-grid">
+                    <li class="project">
+                        <div class="project-inner">
+                            <header>
+                                <div class="project-top">
+                                    <div class="folder"><i class="bi bi-folder"></i></div>
+                                    <div class="project-links">
+                                        <a target="_blank" href="https://github.com/jacobgodwin/etch-a-sketch"><i
+                                                class="bi bi-github"></i></a>
+                                        <a target="_blank" href="https://jacobgodwin.github.io/etch-a-sketch/"><i
+                                                class="bi bi-box-arrow-up-right"></i></a>
+                                    </div>
+                                </div>
+                                <h3 class="project-title">Etch-A-Sketch</h3>
+                                <div class="project-description">
+                                    <p>
+                                        A simple Etch-A-Sketch concept that demonstrates the
+                                        ability to implement HTML/CSS/JS into a functioning
+                                        and interactive web page.
+                                    </p>
+                                </div>
+                            </header>
+                            <footer>
+                                <ul class="project-tech">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </footer>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project-inner">
+                            <header>
+                                <div class="project-top">
+                                    <div class="folder"><i class="bi bi-folder"></i></div>
+                                    <div class="project-links">
+                                        <a target="_blank" href="https://github.com/jacobgodwin/calculator"><i
+                                                class="bi bi-github"></i></a>
+                                        <a target="_blank" href="https://jacobgodwin.github.io/calculator/"><i
+                                                class="bi bi-box-arrow-up-right"></i></a>
+                                    </div>
+                                </div>
+                                <h3 class="project-title">Calculator</h3>
+                                <div class="project-description">
+                                    <p>
+                                        Web-based Calculator demonstrating JavaScript DOM
+                                        manipulation, functions, event listeners, keyboard
+                                        support. On the styling side, I wanted to see if I
+                                        could come close to replicating the design of the
+                                        Apple calculator.
+                                    </p>
+                                </div>
+                            </header>
+                            <footer>
+                                <ul class="project-tech">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                            </footer>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project-inner">
+                            <header>
+                                <div class="project-top">
+                                    <div class="folder"><i class="bi bi-folder"></i></div>
+                                    <div class="project-links">
+                                        <a target="_blank" href="https://github.com/jacobgodwin/tictactoe"><i
+                                                class="bi bi-github"></i></a>
+                                        <a target="_blank" href="https://jacobgodwin.github.io/tictactoe/"><i
+                                                class="bi bi-box-arrow-up-right"></i></a>
+                                    </div>
+                                </div>
+                                <h3 class="project-title">Tic-Tac-Toe</h3>
+                                <div class="project-description">
+                                    <p>
+                                        Tic-Tac-Toe game built to demonstrate the use of
+                                        JavaScript modules and factory functions. I realized
+                                        that I could have included all game assets inside one
+                                        module but wanted to learn about private and public
+                                        functions and variables and how to access them.
+                                    </p>
+                                </div>
+                            </header>
+                            <footer>
+                                <ul class="project-tech">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                            </footer>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project-inner">
+                            <header>
+                                <div class="project-top">
+                                    <div class="folder"><i class="bi bi-folder"></i></div>
+                                    <div class="project-links">
+                                        <a target="_blank" href="https://github.com/jacobgodwin/library-project"><i
+                                                class="bi bi-github"></i></a>
+                                        <a target="_blank" href="https://jacobgodwin.github.io/library-project/"><i
+                                                class="bi bi-box-arrow-up-right"></i></a>
+                                    </div>
+                                </div>
+                                <h3 class="project-title">Library Project</h3>
+                                <div class="project-description">
+                                    <p>
+                                        Simple and rudimentary book library that allows the
+                                        user to add books, update the reading status, and
+                                        remove the book from the "bookshelf".
+                                    </p>
+                                </div>
+                            </header>
+                            <footer>
+                                <ul class="project-tech">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                            </footer>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <div class="heading">
+                <h1>Contact</h1>
+            </div>
+            <a href="" class="anchor" id="contact"></a>
+            <section id="contact-content">
+                <div class="contact-para">
+                    <p>
+                        Feel free to reach out if you feel like my skills would be a
+                        good match, or if you just want to link up!
+                    </p>
+                </div>
+                <a href="mailto:jacobpgodwin@gmail.com" class="email-link" target="_blank">Say Hello</a>
+                <div class="email">jacobpgodwin@gmail.com</div>
+            </section>
+        </main>
+        <footer id="footer-end">
+            <div id="footer-para">
+                <p>Built by Jacob Godwin</p>
+                <p>
+                    Design Inspired by
+                    <a href="https://brittanychiang.com/">Brittany Chiang</a>
+                </p>
+            </div>
+            <div class="social-alt">
+                <ul class="social-footer">
+                    <li>
+                        <a target="_blank" href="https://github.com/jacobgodwin">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/jacobgodwin04/"><i
+                                class="bi bi-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/jacobpgodwin/"><i
+                                class="bi bi-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
     <script src="main.js"></script>
-  </body>
+</body>
+
 </html>
