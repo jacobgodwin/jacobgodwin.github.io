@@ -252,17 +252,24 @@ a.anchor {
 
 /* Skills */
 
+#skills-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .skills-para {
   max-width: 30rem;
   text-align: center;
 }
 
 .skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(6rem, 100%), 1fr));
-  justify-items: center;
-  gap: 1rem;
   margin: 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 70%;
 }
 
 .skill {
