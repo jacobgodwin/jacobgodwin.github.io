@@ -3,6 +3,9 @@
   --nav-text-color: #cccdff;
   --nav-hover: #b9faf8;
   --text-primary: #f4f4f9;
+  --project-description: #dedeed;
+  --bg-project: #153751;
+  --bg-project-hover: #0a1c29;
 }
 
 /* General */
@@ -17,11 +20,12 @@ html {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
   min-height: 100vh;
 }
 
 .offset-top {
-  margin-top: -276px;
+  margin-top: -267px;
 }
 
 main {
@@ -39,11 +43,22 @@ p {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: var(--nav-text-color);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--nav-hover);
+}
+
 .heading {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  margin-top: 8rem;
   margin-bottom: 4rem;
   width: 60%;
 }
@@ -60,6 +75,15 @@ p {
   flex: 1 1;
   height: 1px;
   background-color: var(--nav-text-color);
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -20rem;
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /* Navbar */
@@ -101,16 +125,6 @@ p {
   color: var(--nav-hover);
 }
 
-.nav-item a {
-  text-decoration: none;
-  color: var(--nav-text-color);
-}
-
-.nav-item a:hover {
-  text-decoration: none;
-  color: var(--nav-hover);
-}
-
 .resume {
   text-align: center;
 }
@@ -121,8 +135,8 @@ p {
   background-color: transparent;
   text-decoration: none;
   border: 0.1rem solid var(--nav-hover);
-  padding: 0.8rem 1.3rem;
-  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
 }
 
 .resume-button:hover {
@@ -130,8 +144,8 @@ p {
   color: var(--nav-hover);
   text-decoration: none;
   border: 0.1rem solid var(--nav-hover);
-  padding: 0.8rem 1.3rem;
-  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
   background-color: rgba(185, 250, 248, 0.2);
 }
 
@@ -178,12 +192,11 @@ p {
 
 /* About */
 
-#about {
+#about-grid {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin-top: 6rem;
   min-width: 300px;
 }
 
@@ -208,15 +221,182 @@ p {
 
 /* Skills */
 
-#skills {
+.skills-para {
+  max-width: 30rem;
+  text-align: center;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(7rem, 100%), 1fr));
+  justify-items: center;
+  gap: 1rem;
+  margin: 4rem 0;
+}
+
+.skill {
+  font-size: 4rem;
+  background-color: rgba(244, 244, 249, 0.1);
+  border-radius: 1rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 6rem;
+  height: 6rem;
+}
+
+/* Projects */
+
+#projects-content {
+  min-width: 70vw;
+}
+
+.project {
+  width: 22rem;
+  height: 22rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
+  justify-items: center;
+  gap: 2rem;
+  justify-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--bg-project);
+  border-radius: 0.5rem;
+  height: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.project-inner:hover {
+  box-shadow: 0 0 1rem var(--bg-project-hover);
+}
+
+.project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.folder {
+  color: var(--nav-hover);
+  font-size: clamp(2rem, 1.8548rem + 0.6452vw, 2.5rem);
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: clamp(1.2rem, 1.1129rem + 0.3871vw, 1.5rem);
+}
+
+.project-links a {
+  color: var(--nav-text-color);
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  color: var(--nav-hover);
+}
+
+.project-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  color: var(--project-description);
+  font-size: 1rem;
+}
+
+.project-tech {
+  color: var(--project-description);
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+}
+
+/* Contact */
+
+#contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-para {
+  width: 30vw;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.email-link {
+  display: inline-block;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 200;
+  color: var(--nav-hover);
+  font-size: 0.9rem;
+  background-color: transparent;
+  text-decoration: none;
+  border: 1px solid var(--nav-hover);
+  padding: 1rem 1.2rem;
+  border-radius: 0.3rem;
+}
+
+.email-link:hover {
+  color: var(--nav-hover);
+  text-decoration: none;
+  border: 1px solid var(--nav-hover);
+  padding: 1rem 1.2rem;
+  border-radius: 0.3rem;
+  background-color: rgba(185, 250, 248, 0.2);
+}
+
+.email {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 200;
+  font-size: 1rem;
+  margin: 4rem 0;
 }
 
 /* Footer */
 
-footer {
+#footer-end {
   margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+  font-size: 0.8rem;
+  margin: 8rem 0 4rem 0;
+}
+
+#footer-end a {
+  text-decoration: none;
+  color: var(--nav-hover);
+}
+
+#footer-end p {
+  margin-bottom: 1rem;
+  text-align: center;
 }

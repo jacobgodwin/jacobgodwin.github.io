@@ -10,7 +10,6 @@
 
   .navbar {
     padding-right: 2rem;
-    border: 1px solid red;
   }
 
   .resume {
@@ -71,6 +70,10 @@
   }
 
   .heading {
-    width: 80%;
+    width: 90%;
+  }
+
+  .contact-para {
+    width: 60vw;
   }
 }
